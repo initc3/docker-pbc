@@ -1,7 +1,6 @@
 FROM buildpack-deps:buster
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-                libgmp-dev \
                 bison \
                 flex \
     && rm -rf /var/lib/apt/lists/*
